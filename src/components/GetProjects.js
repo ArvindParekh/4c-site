@@ -55,7 +55,8 @@ const GetProjects = () => {
           <div className="max-w-bodyContainer">
             <div className="mx-4 mt-5 mb-10 flex list-none flex-col items-center justify-center gap-[2rem] lg:flex-row lg:gap-[0.6rem]">
               <div className="py-2">
-                <div className="bg-[#FEFEFE] text-[#314c89] w-full border-slate-200 px-2 outline-none placeholder:text-slate-700 contrast-more:border-slate-400 contrast-more:placeholder:text-slate-500 rounded-3xl bg-opacity-[.2] shadow backdrop-blur-3xl flex items-center flex-row ">
+                {/* <div className="bg-[#FEFEFE] text-[#314c89] w-full border-slate-200 px-2 outline-none placeholder:text-slate-700 contrast-more:border-slate-400 contrast-more:placeholder:text-slate-500 rounded-3xl bg-opacity-[.2] shadow backdrop-blur-3xl flex items-center flex-row "> */}
+                <div className="before-multiselect bg-[#FEFEFE] text-[#314c89] w-full border-slate-200 px-2 outline-none placeholder:text-slate-700 contrast-more:border-slate-400 contrast-more:placeholder:text-slate-500 rounded-3xl bg-opacity-[.2] shadow backdrop-blur-3xl flex items-center flex-row ">
                   <Multiselect
                     options={options}
                     displayValue={"value"}
@@ -83,6 +84,20 @@ const GetProjects = () => {
                     />
                   </svg>
                 </div>
+                {/* <Multiselect
+                  options={options}
+                  displayValue={"value"}
+                  selectedValues={options.selectedValues}
+                  onSelect={getSelectedValues}
+                  onRemove={getSelectedValues}
+                  placeholder="Filter By Tech Stack"
+                  ref={multiselectRef}
+                  // className="bg-[#FEFEFE] text-[#314c89] w-full border-slate-200 px-2 outline-none placeholder:text-slate-700 contrast-more:border-slate-400 contrast-more:placeholder:text-slate-500 rounded-3xl bg-opacity-[.2] shadow backdrop-blur-3xl"
+                  // className="text-[#314c89] bg-[#FEFEFE]"
+                  showCheckbox={true}
+                  closeOnSelect={true}
+                  avoidHighlightFirstOption={true}
+                /> */}
               </div>
             </div>
             <div className="my-[1rem] flex flex-wrap items-center justify-center gap-[1.5rem] pt-4 text-left md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
